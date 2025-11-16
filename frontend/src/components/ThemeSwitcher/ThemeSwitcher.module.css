@@ -1,0 +1,20 @@
+.switcher {
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+
+  background: var(--card-bg);
+  color: var(--text);
+
+  transition: background 0.3s, color 0.3s, transform 0.2s;
+}
+
+.switcher:hover {
+  transform: translateY(-2px);
+}
+
+.switcher:active {
+  transform: translateY(0);
+}

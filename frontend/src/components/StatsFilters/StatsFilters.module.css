@@ -1,0 +1,43 @@
+
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.filters button {
+  padding: 8px 14px;
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  color: var(--text);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.95rem;
+}
+
+.filters button:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.activeFilter {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .filters {
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+  }
+  .filters button {
+    width: 100%;
+    text-align: center;
+  }
+}

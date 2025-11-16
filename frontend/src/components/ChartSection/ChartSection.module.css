@@ -1,0 +1,17 @@
+.chartSection {
+  margin-bottom: 40px;
+}
+
+.chartSection h2 {
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  text-align: center;
+  color: var(--text);
+}
+
+.chartWrapper {
+  width: 100%;
+  max-width: 1000px;
+  height: 400px;
+  margin: 0 auto;
+}

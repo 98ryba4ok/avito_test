@@ -1,0 +1,64 @@
+.gallery {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.mainImageWrapper {
+  flex: 1;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.mainImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.thumbs {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  overflow-y: auto;
+  max-height: 400px;
+  padding: 8px;
+}
+
+.thumb {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid var(--border);
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.thumb:hover {
+  border-color: var(--primary);
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    flex-direction: column;
+  }
+
+  .thumbs {
+    flex-direction: row;
+    max-height: none;
+    max-width: 100%;
+  }
+
+  .thumb {
+    width: 80px;
+    height: 80px;
+  }
+}

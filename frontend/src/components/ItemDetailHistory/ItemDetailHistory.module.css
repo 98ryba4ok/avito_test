@@ -1,0 +1,52 @@
+.historySection {
+  margin-bottom: 32px;
+}
+
+.historySection h2 {
+  margin-bottom: 16px;
+  color: var(--text);
+}
+
+.historyList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.historyItem {
+  padding: 16px;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.historyItem p {
+  margin: 0 0 8px 0;
+  color: var(--text);
+  font-size: 14px;
+}
+
+.historyItem p:last-child {
+  margin-bottom: 0;
+}
+
+.moderatorName {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.reason {
+  color: var(--text-secondary, #666);
+}
+
+.comment {
+  color: var(--text-secondary, #666);
+  font-style: italic;
+}
+
+.timestamp {
+  color: var(--text-secondary, #666);
+  font-size: 12px;
+  margin-top: 8px;
+}

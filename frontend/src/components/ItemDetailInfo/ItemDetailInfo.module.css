@@ -1,0 +1,74 @@
+.infoSection {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.description {
+  padding: 16px;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.description h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: var(--text);
+}
+
+.description p {
+  color: var(--text);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.characteristics {
+  padding: 16px;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.characteristics h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: var(--text);
+}
+
+.characteristicsTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.characteristicsTable tr {
+  border-bottom: 1px solid var(--border);
+}
+
+.characteristicsTable tr:last-child {
+  border-bottom: none;
+}
+
+.charKey {
+  padding: 8px;
+  font-weight: 600;
+  color: var(--text);
+  width: 30%;
+}
+
+.charValue {
+  padding: 8px;
+  color: var(--text);
+}
+
+@media (max-width: 768px) {
+  .infoSection {
+    gap: 24px;
+  }
+
+  .charKey {
+    width: 40%;
+    word-break: break-word;
+  }
+}

@@ -1,0 +1,44 @@
+.itemDetail__container {
+  max-width: 900px;
+  margin: 32px auto;
+  padding: 24px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px var(--shadow);
+  color: var(--text);
+}
+
+.itemDetail__container h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.itemDetail__container h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 32px;
+  margin-bottom: 14px;
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 4px;
+}
+
+.itemDetail__status {
+  font-weight: 600;
+  border-radius: 6px;
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.itemDetail__status--approved {
+  color: #0b6f3a;
+}
+
+.itemDetail__status--rejected {
+  color: #9b1b1b;
+}
+
+.itemDetail__status--requestChanges {
+  color: #8a5800;
+}

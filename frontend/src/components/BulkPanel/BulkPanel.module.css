@@ -1,0 +1,33 @@
+.bulkPanel {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  align-items: center;
+}
+
+.bulkPanel button {
+  padding: 6px 12px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background-color: var(--primary);
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.bulkPanel button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background-color: var(--card-bg);
+  color: var(--text);
+}
+
+.bulkPanel button:hover:not(:disabled) {
+  background-color: var(--primary-hover);
+}
+
+.bulkPanel span {
+  margin-left: auto;
+  font-weight: 500;
+  color: var(--text);
+}

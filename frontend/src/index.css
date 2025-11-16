@@ -1,0 +1,79 @@
+:root {
+  --bg: #ffffff;
+  --text: #000000;
+  --card-bg: #f2f2f2;
+  --border: #dddddd;
+  --shadow: rgba(0, 0, 0, 0.05);
+
+  --primary: #1a73e8;
+  --primary-hover: #155ab6;
+
+  --input-bg: #ffffff;
+  --input-border: #cccccc;
+}
+
+html[data-theme="dark"] {
+  --bg: #0f0f0f;
+  --text: #ffffff;
+  --card-bg: #1f1f1f;
+  --border: #333333;
+  --shadow: rgba(0, 0, 0, 0.4);
+
+  --primary: #5294ff;
+  --primary-hover: #3d7be0;
+
+  --input-bg: #1a1a1a;
+  --input-border: #444444;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary);
+}
+
+button {
+  font-family: inherit;
+}
+
+.newAdsButton {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.newAdsButton button {
+  padding: 6px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--primary);
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.newAdsButton button:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-1px);
+}
+
+.newAdsButton button:active {
+  transform: translateY(0);
+}
