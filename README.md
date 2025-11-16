@@ -10,8 +10,11 @@
 Главная страница:  
 ![Главная страница](screenshots/main.png)
 
-Второй экран / пример графиков:  
-![Второй экран](screenshots/second.png)
+Детальная страница:  
+![Детальная страница](screenshots/second.png)
+
+Статистика:  
+![Статистика](screenshots/stats.png)
 
 ---
 
