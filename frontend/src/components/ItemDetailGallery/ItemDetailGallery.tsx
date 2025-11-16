@@ -1,5 +1,5 @@
 import React from "react";
-import type { Advertisement } from "../../types/ads";
+//import type { Advertisement } from "../../types/ads";
 import styles from "./ItemDetailGallery.module.css";
 
 interface ItemDetailGalleryProps {
@@ -13,7 +13,7 @@ const ItemDetailGallery: React.FC<ItemDetailGalleryProps> = ({
   images,
   selectedImage,
   onSelectImage,
-  title,
+  //title,
 }) => {
   return (
     <div className={styles.gallery}>
